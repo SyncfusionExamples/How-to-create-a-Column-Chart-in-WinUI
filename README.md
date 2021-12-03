@@ -4,6 +4,8 @@ The WinUI Column Chart (Vertical Bar Chart) uses vertical bars (called columns) 
 
 The user guide Documentation helps you to acquire more knowledge on charts and their features. You can also refer to the Feature Tour site to get an overview of all the features in the chart.
 
+![WinUI Column Chart](https://user-images.githubusercontent.com/63223423/144578314-3a8ec267-3f49-43d4-9d8c-148a2812812f.png)
+
 ### Step 1: 
 Create a simple project using the instructions given in the Getting Started with your first WinUI app documentation.
 
@@ -145,6 +147,4 @@ series.ShowDataLabels = true;
 
 chart.Series.Add(series);
 this.Content = chart;
-```
-Output
- 
+``` 
