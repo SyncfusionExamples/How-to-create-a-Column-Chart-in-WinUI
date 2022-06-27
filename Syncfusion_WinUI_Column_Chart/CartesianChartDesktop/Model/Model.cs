@@ -18,5 +18,4 @@ namespace CartesianChartDesktop
             Counts = count;
         }
     }
-
 }
