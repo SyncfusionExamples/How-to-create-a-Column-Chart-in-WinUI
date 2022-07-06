@@ -10,21 +10,21 @@
 
     <Grid>
 
-        <chart:SfCartesianChart Palette="BlueChrome"  Header="Internet Users" Height="250" Width="400">
+        <chart:SfCartesianChart Header="Internet Users" Height="250" Width="400">
 
             <chart:SfCartesianChart.DataContext>
                 <viewModel:ViewModel/>
             </chart:SfCartesianChart.DataContext>
 
             <!--Initialize the horizontal axis for SfCartesianChart-->
-            <chart:SfCartesianChart.PrimaryAxis>
+            <chart:SfCartesianChart.XAxes>
                 <chart:CategoryAxis/>
-            </chart:SfCartesianChart.PrimaryAxis>
+            </chart:SfCartesianChart.XAxes>
 
             <!--Initialize the vertical axis for SfCartesianChart-->
-            <chart:SfCartesianChart.SecondaryAxis>
+            <chart:SfCartesianChart.YAxes>
                 <chart:NumericalAxis/>
-            </chart:SfCartesianChart.SecondaryAxis>
+            </chart:SfCartesianChart.YAxes>
 
             <!--Initialize the series for SfCartesianChart-->
             <chart:SfCartesianChart.Series>
@@ -38,5 +38,4 @@
             </chart:SfCartesianChart.Series>
         </chart:SfCartesianChart>
     </Grid>
-
 </Window>

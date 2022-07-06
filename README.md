@@ -26,27 +26,27 @@ Initialize an empty chart with PrimaryAxis and SecondaryAxis as shown in the fol
 **[XAML]**
 ```
 <chart:SfCartesianChart>
-    <chart:SfCartesianChart.PrimaryAxis>
+    <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
-    </chart:SfCartesianChart.PrimaryAxis>
-    <chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.SecondaryAxis>
+    </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
 ```
 **[C#]**
 ```
 SfCartesianChart chart = new SfCartesianChart();
 
-//Initializing Primary Axis
-CategoryAxis primaryAxis = new CategoryAxis();
+//Initializing XAxes
+CategoryAxis xAxis = new CategoryAxis();
 
-chart.PrimaryAxis = primaryAxis;
+chart.XAxes.Add(xAxis);
 
-//Initializing Secondary Axis
-NumericalAxis secondaryAxis = new NumericalAxis();
+//Initializing YAxes
+NumericalAxis yAxis = new NumericalAxis();
 
-chart.SecondaryAxis = secondaryAxis;
+chart.YAxes.Add(yAxis);
 
 this.Content = chart;
 ```
