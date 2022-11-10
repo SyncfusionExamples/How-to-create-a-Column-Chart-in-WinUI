@@ -1,16 +1,14 @@
-# How-to-create-a-Column-Chart-in-WinUI
+# How to create a WinUI Column Chart (SfCartesianChart)?
 
-The WinUI Column Chart (Vertical Bar Chart) uses vertical bars (called columns) to display different values of one or more items. This section explains how to create WinUI Column Charts.
+The [WinUI Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-column-chart) (Vertical Bar Chart) uses vertical bars (called columns) to display different values of one or more items. This section explains how to create WinUI Column Charts.
 
-The user guide Documentation helps you to acquire more knowledge on charts and their features. You can also refer to the Feature Tour site to get an overview of all the features in the chart.
-
-![WinUI Column Chart](https://user-images.githubusercontent.com/63223423/144578314-3a8ec267-3f49-43d4-9d8c-148a2812812f.png)
+The user guide [Documentation](https://help.syncfusion.com/winui/cartesian-charts/getting-started) helps you to acquire more knowledge on charts and their features. You can also refer to the [Feature Tour](https://www.syncfusion.com/winui-controls/charts) site to get an overview of all the features in the chart.
 
 ### Step 1: 
-Create a simple project using the instructions given in the Getting Started with your first WinUI app documentation.
+Create a simple project using the instructions given in the Getting Started with your first [WinUI app documentation](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app?tabs=csharp).
 
 ### Step 2: 
-Add Syncfusion.Chart.WinUI NuGet to the project and import the SfCartesianChart namespace as follows.
+Add [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet to the project and import the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html?tabs=tabid-1) namespace as follows.
 
 **[XAML]**
 ```
@@ -69,7 +67,7 @@ public class Model
 }
 ```
 ### Step 5: 
-Create a ViewModel class with a data collection property using the above model and initialize a list of objects as shown in the following code sample.
+Create a **ViewModel** class with a **data collection** property using the above model and initialize a list of objects as shown in the following code sample.
 
 **[C#]**
 ```
@@ -91,9 +89,9 @@ public class ViewModel
     }
 ```
 ### Step 6: 
-Set the ViewModel instance as the DataContext of your window; this is done to bind properties of ViewModel to the chart.
+Set the **ViewModel** instance as the **DataContext** of your window; this is done to bind properties of **ViewModel** to the chart.
 
-> Note: Add namespace of ViewModel class to your XAML page, if you prefer to set DataContext in XAML.
+> **Note:** Add namespace of **ViewModel** class to your XAML page, if you prefer to set **DataContext** in XAML.
 
 **[XAML]**
 ```
@@ -113,9 +111,9 @@ chart.DataContext = new ViewModel();
 ```
 ### Step 7: Populate chart with data.
 
-As we are going to visualize the comparison of internet users from various countries in the data model, add ColumnSeries to SfCartesianChart.Series property, and then bind the Data property of the above ViewModel to the ColumnSeries ItemsSource property, as shown in the following code sample.
+As we are going to visualize the comparison of internet users from various countries in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [SfCartesianChart.Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property, and then bind the Data property of the above ViewModel to the ColumnSeries ItemsSource property, as shown in the following code sample.
 
-> Note: Need to set XBindingPath and YBindingPath properties so that series will fetch values from the respective properties in the data model to plot the series.
+> **Note:** Need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties so that series will fetch values from the respective properties in the data model to plot the series.
 
 **[XAML]**
 ```
@@ -148,3 +146,9 @@ series.ShowDataLabels = true;
 chart.Series.Add(series);
 this.Content = chart;
 ``` 
+
+## Output:
+
+![WinUI Column Chart](https://user-images.githubusercontent.com/53489303/200570734-52bd53e1-29cc-4788-a3c2-cf10c27f0e2f.png)
+
+KB article - [How to create a WinUI Column Chart (SfCartesianChart)?](https://www.syncfusion.com/kb/13539/how-to-create-a-winui-column-chart-sfcartesianchart)
